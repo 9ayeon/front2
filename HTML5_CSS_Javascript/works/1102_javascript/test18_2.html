@@ -4,12 +4,20 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>test18.html</title>
+  <title>test18_2.html</title>
   <script>
     'use strict';
 
     function fCheck() {
-      let gender = myform.gender.value;
+      let gender;
+      // if(document.getElementById("gender1").value == '남자밸류') {
+      //   gender = '남자밸류';
+      // }
+      // if(document.getElementById("gender2").value == '여자밸류') {
+      //   gender = '여자밸류';
+      // }
+        if(document.getElementsByName("gender")[0].checked) gender = "남자밸류";
+        if(document.getElementsByName("gender")[1].checked) gender = "여자밸류";
 
       // demo.innerText = gender;
       if(gender == '남자밸류') {
